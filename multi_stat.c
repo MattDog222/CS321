@@ -31,9 +31,9 @@ int main(int argc, char* argv[])
 
 	/* create the threads */
 	//-------------[TO BE COMPLETED]-------------
-	pthread_create(&tid_1, 0, calculate_average, &num_of_args)
-	pthread_create(&tid_2, 0, calculate_minimum, &num_of_args)
-	pthread_create(&tid_3, 0, calculate_maximum, &num_of_args)
+	pthread_create(&tid_1, 0, calculate_average, &num_of_args);
+	pthread_create(&tid_2, 0, calculate_minimum, &num_of_args);
+	pthread_create(&tid_3, 0, calculate_maximum, &num_of_args);
 
 	/* wait for the threads to exit */
 	//-------------[TO BE COMPLETED]-------------
@@ -81,7 +81,7 @@ void* calculate_minimum(void* param)
 	int i;
 	minimum = list[0];
 	for (i = 1; i < count; i++) {
-		if (list[i] < minumum) {
+		if (list[i] < minimum) {
 			minimum = list[i];
 		}
 	}
