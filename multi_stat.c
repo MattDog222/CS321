@@ -58,7 +58,7 @@ void* calculate_average(void* param)
 	for (i = 0; i < count; i++) {
 		sum += list[i];
 	}
-	average = (sum) / count;
+	average = (double)sum / count;
 	pthread_exit(0);
 }
 
